@@ -2,159 +2,160 @@
     section img:nth-child(2n+1){
         display: none;
     }
-
     img{
         width: 25%;
     }
-
-    main nav {
+    nav li{
+        display: block;
+    }
+    nav ul {
         display: none;
     }
-
     i {
-        visibility: visible;
-        color: #569c64;
-        float: right;
-        margin-top: 35px;
-        cursor: pointer;
+        visibility: visible;color: #569c64;float: right;margin-top: 35px;cursor: pointer;
     }
-
-    main section {
-        width: auto;
-    }
+    
 }
-
 @media screen and (min-width : 800px){
     i {
         visibility: hidden; 
         float: right;
     }
 }
-
 body {
     font-family: 'News Cycle', sans-serif;
     margin: 0;
 } 
-
-
-main:nth-child(2n+1){
-    background-color: #569c64;
-}
-
-li {
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 0.9em;
-}
-
-li:hover a{
-    color: #569c64;
-}
-
-main {
+main, header, footer {
     margin: auto;
     max-width: 1300px;
 }
-
-h1, nav, li {
-    display: inline-block;
+section:nth-child(2n+1){
+    background-color: #569c64;
 }
 
+/*------------DEBUT HEADER--------------------*/
+header {
+    background-color: #eeeeee;
+}
+h1{
+    width: 20%;
+    text-align: center;
+}
+li{
+    padding: 0.9em 1em 1em 0em;
+}
+li:hover a{
+    color: #569c64;
+}
+ul {
+    width: 80%;
+    text-align: right;
+    margin: 0;
+}
+h1, ul, li {
+    display: inline-block;
+}
 a {
     text-decoration: none;
     color: black;
 }
 
-h1{
-    width: 14%;
-    padding-left: 4em;
-}
 
-nav {
-    width: 70%;
-    text-align: right;
-}
+/*------------FIN HEADER--------------------*/
 
-header {
-    background-color: #eeeeee;
-}
-
+/*------------DEBUT SECTION--------------------*/
 section {
     text-align: center;
     color: white;
 }
-
 #s1 {
     background-image: url(images/banner.png);
-    background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 4em;   
 }
-
 img{
     border-radius: 50%;
-    margin-top: 4em;
-    margin-left: 3em;
+    margin: 4em 0em 0em 3em;
 }
-
 h2{
     font-size: 4em;
     padding-top: 1em;
     margin-top: 0;
-    margin-bottom: 0;
 }
-
 p{
     padding: 4em;
 }
-
-.btn{
+.btn, button{
     background-color: #2d4047;
     padding: 1.4em 3.2em;;
     border-radius: 8px;
     color: white;
     font-size: 1.2em;
 } 
-
-#s2{
+section:nth-child(2n){
     background-color: #eeeeee;;
     color: black;
     padding-bottom: 4em;
+} 
+#s2 h2{
+    margin-top: 0;
 }
-
+#s2 .btn,button{
+    background-color: #569c64;
+}
 #s3 {
     padding-bottom: 4em;
 }
-
-#s2 h2{
-    padding-top: 2em;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-#s2 .btn{
-    background-color: #569c64;
-}
-
 #s3 h2{
     padding-top: 1.5em;
-    margin-top: 0;
-    margin-bottom: 0;
 }
-
 #s3 .btn{
     background-color: #eeeeee;
-    color: #569c64
+    color: #569c64;
 }
+#s3 p{
+    padding-bottom: 6.5em;
+}
+/*------------FIN SECTION--------------------*/
+
+/*------------DEBUT CONTACT--------------------*/
+#contact{
+    padding-bottom: 0;
+}
+form{
+    width:400px;
+    margin: auto;
+}
+legend{
+    color:#ccc;
+    margin-left: 5px;
+}
+fieldset{
+    padding: 30px 0 0 0;
+    border:1px solid #ccc;
+    margin-bottom: 10px;
+    border-bottom: 0px;
+    border-radius: 2px;
+}
+::placeholder{
+    color: gray;
+    text-align: center;
+}
+input{
+    border: none;
+    background-color: rgb(224, 221, 221);
+    width: 100%;
+    padding-bottom: 0px;
+}
+button{
+    margin-top: 1.5em;
+}
+/*------------FIN CONTACT--------------------*/
 footer{
     text-align: center;
     background-color: #eeeeee;
 }
-
-#s3 p{
-    padding-bottom: 6.5em;
-}
-
 footer p{
     margin: 0;
 }
